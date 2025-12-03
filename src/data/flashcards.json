@@ -1,0 +1,2202 @@
+[
+  {
+    "id": "vocab-001",
+    "english": "apple",
+    "pos": "noun",
+    "phonetic": "/ˈæp.əl/",
+    "japanese": {
+      "kanji": "林檎",
+      "kana": "りんご",
+      "romaji": "ringo"
+    },
+    "example": {
+      "en": "I eat an apple.",
+      "ja": "私はりんごを食べます。"
+    },
+    "audio": "/audio/vocab-001.mp3",
+    "image": "/images/words/apple.jpg",
+    "level": "beginner",
+    "category": "food",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-002",
+    "english": "cat",
+    "pos": "noun",
+    "phonetic": "/kæt/",
+    "japanese": {
+      "kanji": "猫",
+      "kana": "ねこ",
+      "romaji": "neko"
+    },
+    "example": {
+      "en": "The cat sleeps.",
+      "ja": "猫が眠ります。"
+    },
+    "audio": "/audio/vocab-002.mp3",
+    "image": "/images/words/cat.jpg",
+    "level": "beginner",
+    "category": "animals",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-003",
+    "english": "dog",
+    "pos": "noun",
+    "phonetic": "/dɔɡ/",
+    "japanese": {
+      "kanji": "犬",
+      "kana": "いぬ",
+      "romaji": "inu"
+    },
+    "example": {
+      "en": "I have a dog.",
+      "ja": "私は犬を飼っています。"
+    },
+    "audio": "/audio/vocab-003.mp3",
+    "image": "/images/words/dog.jpg",
+    "level": "beginner",
+    "category": "animals",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-004",
+    "english": "book",
+    "pos": "noun",
+    "phonetic": "/bʊk/",
+    "japanese": {
+      "kanji": "本",
+      "kana": "ほん",
+      "romaji": "hon"
+    },
+    "example": {
+      "en": "Read a book.",
+      "ja": "本を読みます。"
+    },
+    "audio": "/audio/vocab-004.mp3",
+    "image": "/images/words/book.jpg",
+    "level": "beginner",
+    "category": "classroom",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-005",
+    "english": "teacher",
+    "pos": "noun",
+    "phonetic": "/ˈtiː.tʃər/",
+    "japanese": {
+      "kanji": "先生",
+      "kana": "せんせい",
+      "romaji": "sensei"
+    },
+    "example": {
+      "en": "She is a teacher.",
+      "ja": "彼女は先生です。"
+    },
+    "audio": "/audio/vocab-005.mp3",
+    "image": "/images/words/teacher.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-006",
+    "english": "student",
+    "pos": "noun",
+    "phonetic": "/ˈstuː.dənt/",
+    "japanese": {
+      "kanji": "学生",
+      "kana": "がくせい",
+      "romaji": "gakusei"
+    },
+    "example": {
+      "en": "I am a student.",
+      "ja": "私は学生です。"
+    },
+    "audio": "/audio/vocab-006.mp3",
+    "image": "/images/words/student.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-007",
+    "english": "pen",
+    "pos": "noun",
+    "phonetic": "/pen/",
+    "japanese": {
+      "kanji": "ペン",
+      "kana": "ぺん",
+      "romaji": "pen"
+    },
+    "example": {
+      "en": "This is a pen.",
+      "ja": "これはペンです。"
+    },
+    "audio": "/audio/vocab-007.mp3",
+    "image": "/images/words/pen.jpg",
+    "level": "beginner",
+    "category": "classroom",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-008",
+    "english": "desk",
+    "pos": "noun",
+    "phonetic": "/desk/",
+    "japanese": {
+      "kanji": "机",
+      "kana": "つくえ",
+      "romaji": "tsukue"
+    },
+    "example": {
+      "en": "Sit at the desk.",
+      "ja": "机に座ります。"
+    },
+    "audio": "/audio/vocab-008.mp3",
+    "image": "/images/words/desk.jpg",
+    "level": "beginner",
+    "category": "classroom",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-009",
+    "english": "water",
+    "pos": "noun",
+    "phonetic": "/ˈwɔː.tər/",
+    "japanese": {
+      "kanji": "水",
+      "kana": "みず",
+      "romaji": "mizu"
+    },
+    "example": {
+      "en": "Drink water.",
+      "ja": "水を飲みます。"
+    },
+    "audio": "/audio/vocab-009.mp3",
+    "image": "/images/words/water.jpg",
+    "level": "beginner",
+    "category": "food",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-010",
+    "english": "hello",
+    "pos": "interjection",
+    "phonetic": "/həˈloʊ/",
+    "japanese": {
+      "kanji": "こんにちは",
+      "kana": "こんにちは",
+      "romaji": "konnichiwa"
+    },
+    "example": {
+      "en": "Hello, friend.",
+      "ja": "こんにちは、友達。"
+    },
+    "audio": "/audio/vocab-010.mp3",
+    "image": "/images/words/hello.jpg",
+    "level": "beginner",
+    "category": "greetings",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-011",
+    "english": "thank you",
+    "pos": "phrase",
+    "phonetic": "/θæŋk juː/",
+    "japanese": {
+      "kanji": "ありがとう",
+      "kana": "ありがとう",
+      "romaji": "arigatou"
+    },
+    "example": {
+      "en": "Thank you very much.",
+      "ja": "本当にありがとう。"
+    },
+    "audio": "/audio/vocab-011.mp3",
+    "image": "/images/words/thank-you.jpg",
+    "level": "beginner",
+    "category": "greetings",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-012",
+    "english": "yes",
+    "pos": "adverb",
+    "phonetic": "/jes/",
+    "japanese": {
+      "kanji": "はい",
+      "kana": "はい",
+      "romaji": "hai"
+    },
+    "example": {
+      "en": "Yes, please.",
+      "ja": "はい、お願いします。"
+    },
+    "audio": "/audio/vocab-012.mp3",
+    "image": "/images/words/yes.jpg",
+    "level": "beginner",
+    "category": "basics",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-013",
+    "english": "no",
+    "pos": "adverb",
+    "phonetic": "/noʊ/",
+    "japanese": {
+      "kanji": "いいえ",
+      "kana": "いいえ",
+      "romaji": "iie"
+    },
+    "example": {
+      "en": "No, thank you.",
+      "ja": "いいえ、結構です。"
+    },
+    "audio": "/audio/vocab-013.mp3",
+    "image": "/images/words/no.jpg",
+    "level": "beginner",
+    "category": "basics",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-014",
+    "english": "good morning",
+    "pos": "phrase",
+    "phonetic": "/ɡʊd ˈmɔːr.nɪŋ/",
+    "japanese": {
+      "kanji": "おはよう",
+      "kana": "おはよう",
+      "romaji": "ohayou"
+    },
+    "example": {
+      "en": "Good morning, teacher.",
+      "ja": "先生、おはようございます。"
+    },
+    "audio": "/audio/vocab-014.mp3",
+    "image": "/images/words/good-morning.jpg",
+    "level": "beginner",
+    "category": "greetings",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-015",
+    "english": "goodbye",
+    "pos": "interjection",
+    "phonetic": "/ɡʊdˈbaɪ/",
+    "japanese": {
+      "kanji": "さようなら",
+      "kana": "さようなら",
+      "romaji": "sayounara"
+    },
+    "example": {
+      "en": "Goodbye, see you.",
+      "ja": "さようなら、またね。"
+    },
+    "audio": "/audio/vocab-015.mp3",
+    "image": "/images/words/goodbye.jpg",
+    "level": "beginner",
+    "category": "greetings",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-016",
+    "english": "name",
+    "pos": "noun",
+    "phonetic": "/neɪm/",
+    "japanese": {
+      "kanji": "名前",
+      "kana": "なまえ",
+      "romaji": "namae"
+    },
+    "example": {
+      "en": "What is your name?",
+      "ja": "あなたの名前は何ですか？"
+    },
+    "audio": "/audio/vocab-016.mp3",
+    "image": "/images/words/name.jpg",
+    "level": "beginner",
+    "category": "basics",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-017",
+    "english": "school",
+    "pos": "noun",
+    "phonetic": "/skuːl/",
+    "japanese": {
+      "kanji": "学校",
+      "kana": "がっこう",
+      "romaji": "gakkou"
+    },
+    "example": {
+      "en": "I go to school.",
+      "ja": "私は学校に行きます。"
+    },
+    "audio": "/audio/vocab-017.mp3",
+    "image": "/images/words/school.jpg",
+    "level": "beginner",
+    "category": "places",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-018",
+    "english": "house",
+    "pos": "noun",
+    "phonetic": "/haʊs/",
+    "japanese": {
+      "kanji": "家",
+      "kana": "いえ",
+      "romaji": "ie"
+    },
+    "example": {
+      "en": "This is my house.",
+      "ja": "これは私の家です。"
+    },
+    "audio": "/audio/vocab-018.mp3",
+    "image": "/images/words/house.jpg",
+    "level": "beginner",
+    "category": "places",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-019",
+    "english": "car",
+    "pos": "noun",
+    "phonetic": "/kɑːr/",
+    "japanese": {
+      "kanji": "車",
+      "kana": "くるま",
+      "romaji": "kuruma"
+    },
+    "example": {
+      "en": "A red car.",
+      "ja": "赤い車。"
+    },
+    "audio": "/audio/vocab-019.mp3",
+    "image": "/images/words/car.jpg",
+    "level": "beginner",
+    "category": "transport",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-020",
+    "english": "bus",
+    "pos": "noun",
+    "phonetic": "/bʌs/",
+    "japanese": {
+      "kanji": "バス",
+      "kana": "ばす",
+      "romaji": "basu"
+    },
+    "example": {
+      "en": "Ride the bus.",
+      "ja": "バスに乗ります。"
+    },
+    "audio": "/audio/vocab-020.mp3",
+    "image": "/images/words/bus.jpg",
+    "level": "beginner",
+    "category": "transport",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-021",
+    "english": "train",
+    "pos": "noun",
+    "phonetic": "/treɪn/",
+    "japanese": {
+      "kanji": "電車",
+      "kana": "でんしゃ",
+      "romaji": "densha"
+    },
+    "example": {
+      "en": "The train is fast.",
+      "ja": "電車は速いです。"
+    },
+    "audio": "/audio/vocab-021.mp3",
+    "image": "/images/words/train.jpg",
+    "level": "beginner",
+    "category": "transport",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-022",
+    "english": "bicycle",
+    "pos": "noun",
+    "phonetic": "/ˈbaɪ.sə.kəl/",
+    "japanese": {
+      "kanji": "自転車",
+      "kana": "じてんしゃ",
+      "romaji": "jitensha"
+    },
+    "example": {
+      "en": "I ride a bicycle.",
+      "ja": "私は自転車に乗ります。"
+    },
+    "audio": "/audio/vocab-022.mp3",
+    "image": "/images/words/bicycle.jpg",
+    "level": "beginner",
+    "category": "transport",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-023",
+    "english": "walk",
+    "pos": "verb",
+    "phonetic": "/wɔːk/",
+    "japanese": {
+      "kanji": "歩く",
+      "kana": "あるく",
+      "romaji": "aruku"
+    },
+    "example": {
+      "en": "I walk to school.",
+      "ja": "私は学校へ歩いて行きます。"
+    },
+    "audio": "/audio/vocab-023.mp3",
+    "image": "/images/words/walk.jpg",
+    "level": "beginner",
+    "category": "verbs",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-024",
+    "english": "run",
+    "pos": "verb",
+    "phonetic": "/rʌn/",
+    "japanese": {
+      "kanji": "走る",
+      "kana": "はしる",
+      "romaji": "hashiru"
+    },
+    "example": {
+      "en": "He can run fast.",
+      "ja": "彼は速く走れます。"
+    },
+    "audio": "/audio/vocab-024.mp3",
+    "image": "/images/words/run.jpg",
+    "level": "beginner",
+    "category": "verbs",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-025",
+    "english": "eat",
+    "pos": "verb",
+    "phonetic": "/iːt/",
+    "japanese": {
+      "kanji": "食べる",
+      "kana": "たべる",
+      "romaji": "taberu"
+    },
+    "example": {
+      "en": "Eat lunch.",
+      "ja": "昼食を食べます。"
+    },
+    "audio": "/audio/vocab-025.mp3",
+    "image": "/images/words/eat.jpg",
+    "level": "beginner",
+    "category": "verbs",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-026",
+    "english": "drink",
+    "pos": "verb",
+    "phonetic": "/drɪŋk/",
+    "japanese": {
+      "kanji": "飲む",
+      "kana": "のむ",
+      "romaji": "nomu"
+    },
+    "example": {
+      "en": "Drink tea.",
+      "ja": "お茶を飲みます。"
+    },
+    "audio": "/audio/vocab-026.mp3",
+    "image": "/images/words/drink.jpg",
+    "level": "beginner",
+    "category": "verbs",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-027",
+    "english": "sleep",
+    "pos": "verb",
+    "phonetic": "/sliːp/",
+    "japanese": {
+      "kanji": "眠る",
+      "kana": "ねむる",
+      "romaji": "nemuru"
+    },
+    "example": {
+      "en": "Sleep at night.",
+      "ja": "夜に眠ります。"
+    },
+    "audio": "/audio/vocab-027.mp3",
+    "image": "/images/words/sleep.jpg",
+    "level": "beginner",
+    "category": "verbs",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-028",
+    "english": "study",
+    "pos": "verb",
+    "phonetic": "/ˈstʌd.i/",
+    "japanese": {
+      "kanji": "勉強する",
+      "kana": "べんきょうする",
+      "romaji": "benkyou suru"
+    },
+    "example": {
+      "en": "Study English.",
+      "ja": "英語を勉強します。"
+    },
+    "audio": "/audio/vocab-028.mp3",
+    "image": "/images/words/study.jpg",
+    "level": "beginner",
+    "category": "verbs",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-029",
+    "english": "play",
+    "pos": "verb",
+    "phonetic": "/pleɪ/",
+    "japanese": {
+      "kanji": "遊ぶ",
+      "kana": "あそぶ",
+      "romaji": "asobu"
+    },
+    "example": {
+      "en": "Play games.",
+      "ja": "ゲームをして遊びます。"
+    },
+    "audio": "/audio/vocab-029.mp3",
+    "image": "/images/words/play.jpg",
+    "level": "beginner",
+    "category": "verbs",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-030",
+    "english": "friend",
+    "pos": "noun",
+    "phonetic": "/frend/",
+    "japanese": {
+      "kanji": "友達",
+      "kana": "ともだち",
+      "romaji": "tomodachi"
+    },
+    "example": {
+      "en": "My best friend.",
+      "ja": "私の親友。"
+    },
+    "audio": "/audio/vocab-030.mp3",
+    "image": "/images/words/friend.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-031",
+    "english": "mother",
+    "pos": "noun",
+    "phonetic": "/ˈmʌð.ər/",
+    "japanese": {
+      "kanji": "母",
+      "kana": "はは",
+      "romaji": "haha"
+    },
+    "example": {
+      "en": "I love my mother.",
+      "ja": "私は母が大好きです。"
+    },
+    "audio": "/audio/vocab-031.mp3",
+    "image": "/images/words/mother.jpg",
+    "level": "beginner",
+    "category": "family",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-032",
+    "english": "father",
+    "pos": "noun",
+    "phonetic": "/ˈfɑː.ðər/",
+    "japanese": {
+      "kanji": "父",
+      "kana": "ちち",
+      "romaji": "chichi"
+    },
+    "example": {
+      "en": "My father works.",
+      "ja": "父は働いています。"
+    },
+    "audio": "/audio/vocab-032.mp3",
+    "image": "/images/words/father.jpg",
+    "level": "beginner",
+    "category": "family",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-033",
+    "english": "brother",
+    "pos": "noun",
+    "phonetic": "/ˈbrʌð.ər/",
+    "japanese": {
+      "kanji": "兄弟",
+      "kana": "きょうだい",
+      "romaji": "kyoudai"
+    },
+    "example": {
+      "en": "He is my brother.",
+      "ja": "彼は私の兄弟です。"
+    },
+    "audio": "/audio/vocab-033.mp3",
+    "image": "/images/words/brother.jpg",
+    "level": "beginner",
+    "category": "family",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-034",
+    "english": "sister",
+    "pos": "noun",
+    "phonetic": "/ˈsɪs.tər/",
+    "japanese": {
+      "kanji": "姉妹",
+      "kana": "しまい",
+      "romaji": "shimai"
+    },
+    "example": {
+      "en": "She is my sister.",
+      "ja": "彼女は私の姉妹です。"
+    },
+    "audio": "/audio/vocab-034.mp3",
+    "image": "/images/words/sister.jpg",
+    "level": "beginner",
+    "category": "family",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-035",
+    "english": "big",
+    "pos": "adjective",
+    "phonetic": "/bɪɡ/",
+    "japanese": {
+      "kanji": "大きい",
+      "kana": "おおきい",
+      "romaji": "ookii"
+    },
+    "example": {
+      "en": "A big house.",
+      "ja": "大きな家。"
+    },
+    "audio": "/audio/vocab-035.mp3",
+    "image": "/images/words/big.jpg",
+    "level": "beginner",
+    "category": "adjectives",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-036",
+    "english": "small",
+    "pos": "adjective",
+    "phonetic": "/smɔːl/",
+    "japanese": {
+      "kanji": "小さい",
+      "kana": "ちいさい",
+      "romaji": "chiisai"
+    },
+    "example": {
+      "en": "A small cat.",
+      "ja": "小さな猫。"
+    },
+    "audio": "/audio/vocab-036.mp3",
+    "image": "/images/words/small.jpg",
+    "level": "beginner",
+    "category": "adjectives",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-037",
+    "english": "red",
+    "pos": "adjective",
+    "phonetic": "/red/",
+    "japanese": {
+      "kanji": "赤",
+      "kana": "あか",
+      "romaji": "aka"
+    },
+    "example": {
+      "en": "A red apple.",
+      "ja": "赤いりんご。"
+    },
+    "audio": "/audio/vocab-037.mp3",
+    "image": "/images/words/red.jpg",
+    "level": "beginner",
+    "category": "colors",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-038",
+    "english": "blue",
+    "pos": "adjective",
+    "phonetic": "/bluː/",
+    "japanese": {
+      "kanji": "青",
+      "kana": "あお",
+      "romaji": "ao"
+    },
+    "example": {
+      "en": "The blue sky.",
+      "ja": "青い空。"
+    },
+    "audio": "/audio/vocab-038.mp3",
+    "image": "/images/words/blue.jpg",
+    "level": "beginner",
+    "category": "colors",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-039",
+    "english": "yellow",
+    "pos": "adjective",
+    "phonetic": "/ˈjel.oʊ/",
+    "japanese": {
+      "kanji": "黄色",
+      "kana": "きいろ",
+      "romaji": "kiiro"
+    },
+    "example": {
+      "en": "A yellow sun.",
+      "ja": "黄色い太陽。"
+    },
+    "audio": "/audio/vocab-039.mp3",
+    "image": "/images/words/yellow.jpg",
+    "level": "beginner",
+    "category": "colors",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-040",
+    "english": "green",
+    "pos": "adjective",
+    "phonetic": "/ɡriːn/",
+    "japanese": {
+      "kanji": "緑",
+      "kana": "みどり",
+      "romaji": "midori"
+    },
+    "example": {
+      "en": "Green grass.",
+      "ja": "緑の草。"
+    },
+    "audio": "/audio/vocab-040.mp3",
+    "image": "/images/words/green.jpg",
+    "level": "beginner",
+    "category": "colors",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-041",
+    "english": "bird",
+    "pos": "noun",
+    "phonetic": "/bɜːrd/",
+    "japanese": {
+      "kanji": "鳥",
+      "kana": "とり",
+      "romaji": "tori"
+    },
+    "example": {
+      "en": "The bird flies.",
+      "ja": "鳥が飛びます。"
+    },
+    "audio": "/audio/vocab-041.mp3",
+    "image": "/images/words/bird.jpg",
+    "level": "beginner",
+    "category": "animals",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-042",
+    "english": "fish",
+    "pos": "noun",
+    "phonetic": "/fɪʃ/",
+    "japanese": {
+      "kanji": "魚",
+      "kana": "さかな",
+      "romaji": "sakana"
+    },
+    "example": {
+      "en": "Fish swim.",
+      "ja": "魚が泳ぎます。"
+    },
+    "audio": "/audio/vocab-042.mp3",
+    "image": "/images/words/fish.jpg",
+    "level": "beginner",
+    "category": "animals",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-043",
+    "english": "rice",
+    "pos": "noun",
+    "phonetic": "/raɪs/",
+    "japanese": {
+      "kanji": "ご飯",
+      "kana": "ごはん",
+      "romaji": "gohan"
+    },
+    "example": {
+      "en": "I eat rice.",
+      "ja": "私はご飯を食べます。"
+    },
+    "audio": "/audio/vocab-043.mp3",
+    "image": "/images/words/rice.jpg",
+    "level": "beginner",
+    "category": "food",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-044",
+    "english": "bread",
+    "pos": "noun",
+    "phonetic": "/bred/",
+    "japanese": {
+      "kanji": "パン",
+      "kana": "ぱん",
+      "romaji": "pan"
+    },
+    "example": {
+      "en": "Bread and butter.",
+      "ja": "パンとバター。"
+    },
+    "audio": "/audio/vocab-044.mp3",
+    "image": "/images/words/bread.jpg",
+    "level": "beginner",
+    "category": "food",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-045",
+    "english": "milk",
+    "pos": "noun",
+    "phonetic": "/mɪlk/",
+    "japanese": {
+      "kanji": "牛乳",
+      "kana": "ぎゅうにゅう",
+      "romaji": "gyuunyuu"
+    },
+    "example": {
+      "en": "Drink milk.",
+      "ja": "牛乳を飲みます。"
+    },
+    "audio": "/audio/vocab-045.mp3",
+    "image": "/images/words/milk.jpg",
+    "level": "beginner",
+    "category": "food",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-046",
+    "english": "egg",
+    "pos": "noun",
+    "phonetic": "/eɡ/",
+    "japanese": {
+      "kanji": "卵",
+      "kana": "たまご",
+      "romaji": "tamago"
+    },
+    "example": {
+      "en": "Boiled egg.",
+      "ja": "ゆで卵。"
+    },
+    "audio": "/audio/vocab-046.mp3",
+    "image": "/images/words/egg.jpg",
+    "level": "beginner",
+    "category": "food",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-047",
+    "english": "happy",
+    "pos": "adjective",
+    "phonetic": "/ˈhæp.i/",
+    "japanese": {
+      "kanji": "幸せ",
+      "kana": "しあわせ",
+      "romaji": "shiawase"
+    },
+    "example": {
+      "en": "I am happy.",
+      "ja": "私は幸せです。"
+    },
+    "audio": "/audio/vocab-047.mp3",
+    "image": "/images/words/happy.jpg",
+    "level": "beginner",
+    "category": "feelings",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-048",
+    "english": "sad",
+    "pos": "adjective",
+    "phonetic": "/sæd/",
+    "japanese": {
+      "kanji": "悲しい",
+      "kana": "かなしい",
+      "romaji": "kanashii"
+    },
+    "example": {
+      "en": "Do not be sad.",
+      "ja": "悲しまないで。"
+    },
+    "audio": "/audio/vocab-048.mp3",
+    "image": "/images/words/sad.jpg",
+    "level": "beginner",
+    "category": "feelings",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-049",
+    "english": "hot",
+    "pos": "adjective",
+    "phonetic": "/hɑːt/",
+    "japanese": {
+      "kanji": "暑い",
+      "kana": "あつい",
+      "romaji": "atsui"
+    },
+    "example": {
+      "en": "Hot summer.",
+      "ja": "暑い夏。"
+    },
+    "audio": "/audio/vocab-049.mp3",
+    "image": "/images/words/hot.jpg",
+    "level": "beginner",
+    "category": "adjectives",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-050",
+    "english": "cold",
+    "pos": "adjective",
+    "phonetic": "/koʊld/",
+    "japanese": {
+      "kanji": "寒い",
+      "kana": "さむい",
+      "romaji": "samui"
+    },
+    "example": {
+      "en": "Cold winter.",
+      "ja": "寒い冬。"
+    },
+    "audio": "/audio/vocab-050.mp3",
+    "image": "/images/words/cold.jpg",
+    "level": "beginner",
+    "category": "adjectives",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-051",
+    "english": "sun",
+    "pos": "noun",
+    "phonetic": "/sʌn/",
+    "japanese": {
+      "kanji": "太陽",
+      "kana": "たいよう",
+      "romaji": "taiyou"
+    },
+    "example": {
+      "en": "The sun shines.",
+      "ja": "太陽が輝きます。"
+    },
+    "audio": "/audio/vocab-051.mp3",
+    "image": "/images/words/sun.jpg",
+    "level": "beginner",
+    "category": "nature",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-052",
+    "english": "moon",
+    "pos": "noun",
+    "phonetic": "/muːn/",
+    "japanese": {
+      "kanji": "月",
+      "kana": "つき",
+      "romaji": "tsuki"
+    },
+    "example": {
+      "en": "Full moon.",
+      "ja": "満月。"
+    },
+    "audio": "/audio/vocab-052.mp3",
+    "image": "/images/words/moon.jpg",
+    "level": "beginner",
+    "category": "nature",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-053",
+    "english": "star",
+    "pos": "noun",
+    "phonetic": "/stɑːr/",
+    "japanese": {
+      "kanji": "星",
+      "kana": "ほし",
+      "romaji": "hoshi"
+    },
+    "example": {
+      "en": "Twinkle star.",
+      "ja": "きらめく星。"
+    },
+    "audio": "/audio/vocab-053.mp3",
+    "image": "/images/words/star.jpg",
+    "level": "beginner",
+    "category": "nature",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-054",
+    "english": "rain",
+    "pos": "noun",
+    "phonetic": "/reɪn/",
+    "japanese": {
+      "kanji": "雨",
+      "kana": "あめ",
+      "romaji": "ame"
+    },
+    "example": {
+      "en": "Rain falls.",
+      "ja": "雨が降ります。"
+    },
+    "audio": "/audio/vocab-054.mp3",
+    "image": "/images/words/rain.jpg",
+    "level": "beginner",
+    "category": "nature",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-055",
+    "english": "flower",
+    "pos": "noun",
+    "phonetic": "/ˈflaʊ.ər/",
+    "japanese": {
+      "kanji": "花",
+      "kana": "はな",
+      "romaji": "hana"
+    },
+    "example": {
+      "en": "Beautiful flower.",
+      "ja": "美しい花。"
+    },
+    "audio": "/audio/vocab-055.mp3",
+    "image": "/images/words/flower.jpg",
+    "level": "beginner",
+    "category": "nature",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-056",
+    "english": "tree",
+    "pos": "noun",
+    "phonetic": "/triː/",
+    "japanese": {
+      "kanji": "木",
+      "kana": "き",
+      "romaji": "ki"
+    },
+    "example": {
+      "en": "Tall tree.",
+      "ja": "高い木。"
+    },
+    "audio": "/audio/vocab-056.mp3",
+    "image": "/images/words/tree.jpg",
+    "level": "beginner",
+    "category": "nature",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-057",
+    "english": "room",
+    "pos": "noun",
+    "phonetic": "/ruːm/",
+    "japanese": {
+      "kanji": "部屋",
+      "kana": "へや",
+      "romaji": "heya"
+    },
+    "example": {
+      "en": "My room.",
+      "ja": "私の部屋。"
+    },
+    "audio": "/audio/vocab-057.mp3",
+    "image": "/images/words/room.jpg",
+    "level": "beginner",
+    "category": "places",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-058",
+    "english": "chair",
+    "pos": "noun",
+    "phonetic": "/tʃer/",
+    "japanese": {
+      "kanji": "椅子",
+      "kana": "いす",
+      "romaji": "isu"
+    },
+    "example": {
+      "en": "Sit on the chair.",
+      "ja": "椅子に座ります。"
+    },
+    "audio": "/audio/vocab-058.mp3",
+    "image": "/images/words/chair.jpg",
+    "level": "beginner",
+    "category": "classroom",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-059",
+    "english": "bag",
+    "pos": "noun",
+    "phonetic": "/bæɡ/",
+    "japanese": {
+      "kanji": "鞄",
+      "kana": "かばん",
+      "romaji": "kaban"
+    },
+    "example": {
+      "en": "School bag.",
+      "ja": "通学鞄。"
+    },
+    "audio": "/audio/vocab-059.mp3",
+    "image": "/images/words/bag.jpg",
+    "level": "beginner",
+    "category": "classroom",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-060",
+    "english": "clock",
+    "pos": "noun",
+    "phonetic": "/klɑːk/",
+    "japanese": {
+      "kanji": "時計",
+      "kana": "とけい",
+      "romaji": "tokei"
+    },
+    "example": {
+      "en": "Look at the clock.",
+      "ja": "時計を見て。"
+    },
+    "audio": "/audio/vocab-060.mp3",
+    "image": "/images/words/clock.jpg",
+    "level": "beginner",
+    "category": "classroom",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-061",
+    "english": "hand",
+    "pos": "noun",
+    "phonetic": "/hænd/",
+    "japanese": {
+      "kanji": "手",
+      "kana": "て",
+      "romaji": "te"
+    },
+    "example": {
+      "en": "Clap your hands.",
+      "ja": "手をたたいて。"
+    },
+    "audio": "/audio/vocab-061.mp3",
+    "image": "/images/words/hand.jpg",
+    "level": "beginner",
+    "category": "body",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-062",
+    "english": "foot",
+    "pos": "noun",
+    "phonetic": "/fʊt/",
+    "japanese": {
+      "kanji": "足",
+      "kana": "あし",
+      "romaji": "ashi"
+    },
+    "example": {
+      "en": "Stomp your foot.",
+      "ja": "足を鳴らして。"
+    },
+    "audio": "/audio/vocab-062.mp3",
+    "image": "/images/words/foot.jpg",
+    "level": "beginner",
+    "category": "body",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-063",
+    "english": "face",
+    "pos": "noun",
+    "phonetic": "/feɪs/",
+    "japanese": {
+      "kanji": "顔",
+      "kana": "かお",
+      "romaji": "kao"
+    },
+    "example": {
+      "en": "Wash your face.",
+      "ja": "顔を洗って。"
+    },
+    "audio": "/audio/vocab-063.mp3",
+    "image": "/images/words/face.jpg",
+    "level": "beginner",
+    "category": "body",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-064",
+    "english": "eye",
+    "pos": "noun",
+    "phonetic": "/aɪ/",
+    "japanese": {
+      "kanji": "目",
+      "kana": "め",
+      "romaji": "me"
+    },
+    "example": {
+      "en": "Close your eyes.",
+      "ja": "目を閉じて。"
+    },
+    "audio": "/audio/vocab-064.mp3",
+    "image": "/images/words/eye.jpg",
+    "level": "beginner",
+    "category": "body",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-065",
+    "english": "mouth",
+    "pos": "noun",
+    "phonetic": "/maʊθ/",
+    "japanese": {
+      "kanji": "口",
+      "kana": "くち",
+      "romaji": "kuchi"
+    },
+    "example": {
+      "en": "Open your mouth.",
+      "ja": "口を開けて。"
+    },
+    "audio": "/audio/vocab-065.mp3",
+    "image": "/images/words/mouth.jpg",
+    "level": "beginner",
+    "category": "body",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-066",
+    "english": "ear",
+    "pos": "noun",
+    "phonetic": "/ɪr/",
+    "japanese": {
+      "kanji": "耳",
+      "kana": "みみ",
+      "romaji": "mimi"
+    },
+    "example": {
+      "en": "Listen with ears.",
+      "ja": "耳で聞く。"
+    },
+    "audio": "/audio/vocab-066.mp3",
+    "image": "/images/words/ear.jpg",
+    "level": "beginner",
+    "category": "body",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-067",
+    "english": "nose",
+    "pos": "noun",
+    "phonetic": "/noʊz/",
+    "japanese": {
+      "kanji": "鼻",
+      "kana": "はな",
+      "romaji": "hana"
+    },
+    "example": {
+      "en": "Touch your nose.",
+      "ja": "鼻を触って。"
+    },
+    "audio": "/audio/vocab-067.mp3",
+    "image": "/images/words/nose.jpg",
+    "level": "beginner",
+    "category": "body",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-068",
+    "english": "one",
+    "pos": "number",
+    "phonetic": "/wʌn/",
+    "japanese": {
+      "kanji": "一",
+      "kana": "いち",
+      "romaji": "ichi"
+    },
+    "example": {
+      "en": "One apple.",
+      "ja": "一つのりんご。"
+    },
+    "audio": "/audio/vocab-068.mp3",
+    "image": "/images/words/one.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-069",
+    "english": "two",
+    "pos": "number",
+    "phonetic": "/tuː/",
+    "japanese": {
+      "kanji": "二",
+      "kana": "に",
+      "romaji": "ni"
+    },
+    "example": {
+      "en": "Two eyes.",
+      "ja": "二つの目。"
+    },
+    "audio": "/audio/vocab-069.mp3",
+    "image": "/images/words/two.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-070",
+    "english": "three",
+    "pos": "number",
+    "phonetic": "/θriː/",
+    "japanese": {
+      "kanji": "三",
+      "kana": "さん",
+      "romaji": "san"
+    },
+    "example": {
+      "en": "Three pens.",
+      "ja": "三本のペン。"
+    },
+    "audio": "/audio/vocab-070.mp3",
+    "image": "/images/words/three.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-071",
+    "english": "four",
+    "pos": "number",
+    "phonetic": "/fɔːr/",
+    "japanese": {
+      "kanji": "四",
+      "kana": "よん",
+      "romaji": "yon"
+    },
+    "example": {
+      "en": "Four legs.",
+      "ja": "四本の脚。"
+    },
+    "audio": "/audio/vocab-071.mp3",
+    "image": "/images/words/four.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-072",
+    "english": "five",
+    "pos": "number",
+    "phonetic": "/faɪv/",
+    "japanese": {
+      "kanji": "五",
+      "kana": "ご",
+      "romaji": "go"
+    },
+    "example": {
+      "en": "Five fingers.",
+      "ja": "五本の指。"
+    },
+    "audio": "/audio/vocab-072.mp3",
+    "image": "/images/words/five.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-073",
+    "english": "six",
+    "pos": "number",
+    "phonetic": "/sɪks/",
+    "japanese": {
+      "kanji": "六",
+      "kana": "ろく",
+      "romaji": "roku"
+    },
+    "example": {
+      "en": "Six days.",
+      "ja": "六日間。"
+    },
+    "audio": "/audio/vocab-073.mp3",
+    "image": "/images/words/six.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-074",
+    "english": "seven",
+    "pos": "number",
+    "phonetic": "/ˈsev.ən/",
+    "japanese": {
+      "kanji": "七",
+      "kana": "なな",
+      "romaji": "nana"
+    },
+    "example": {
+      "en": "Seven seas.",
+      "ja": "七つの海。"
+    },
+    "audio": "/audio/vocab-074.mp3",
+    "image": "/images/words/seven.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-075",
+    "english": "eight",
+    "pos": "number",
+    "phonetic": "/eɪt/",
+    "japanese": {
+      "kanji": "八",
+      "kana": "はち",
+      "romaji": "hachi"
+    },
+    "example": {
+      "en": "Eight o'clock.",
+      "ja": "八時。"
+    },
+    "audio": "/audio/vocab-075.mp3",
+    "image": "/images/words/eight.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-076",
+    "english": "nine",
+    "pos": "number",
+    "phonetic": "/naɪn/",
+    "japanese": {
+      "kanji": "九",
+      "kana": "きゅう",
+      "romaji": "kyuu"
+    },
+    "example": {
+      "en": "Nine lives.",
+      "ja": "九つの命。"
+    },
+    "audio": "/audio/vocab-076.mp3",
+    "image": "/images/words/nine.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-077",
+    "english": "ten",
+    "pos": "number",
+    "phonetic": "/ten/",
+    "japanese": {
+      "kanji": "十",
+      "kana": "じゅう",
+      "romaji": "juu"
+    },
+    "example": {
+      "en": "Ten points.",
+      "ja": "十点。"
+    },
+    "audio": "/audio/vocab-077.mp3",
+    "image": "/images/words/ten.jpg",
+    "level": "beginner",
+    "category": "numbers",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-078",
+    "english": "white",
+    "pos": "adjective",
+    "phonetic": "/waɪt/",
+    "japanese": {
+      "kanji": "白",
+      "kana": "しろ",
+      "romaji": "shiro"
+    },
+    "example": {
+      "en": "White snow.",
+      "ja": "白い雪。"
+    },
+    "audio": "/audio/vocab-078.mp3",
+    "image": "/images/words/white.jpg",
+    "level": "beginner",
+    "category": "colors",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-079",
+    "english": "black",
+    "pos": "adjective",
+    "phonetic": "/blæk/",
+    "japanese": {
+      "kanji": "黒",
+      "kana": "くろ",
+      "romaji": "kuro"
+    },
+    "example": {
+      "en": "Black cat.",
+      "ja": "黒猫。"
+    },
+    "audio": "/audio/vocab-079.mp3",
+    "image": "/images/words/black.jpg",
+    "level": "beginner",
+    "category": "colors",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-080",
+    "english": "time",
+    "pos": "noun",
+    "phonetic": "/taɪm/",
+    "japanese": {
+      "kanji": "時間",
+      "kana": "じかん",
+      "romaji": "jikan"
+    },
+    "example": {
+      "en": "What time is it?",
+      "ja": "何時ですか？"
+    },
+    "audio": "/audio/vocab-080.mp3",
+    "image": "/images/words/time.jpg",
+    "level": "beginner",
+    "category": "abstract",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-081",
+    "english": "today",
+    "pos": "noun",
+    "phonetic": "/təˈdeɪ/",
+    "japanese": {
+      "kanji": "今日",
+      "kana": "きょう",
+      "romaji": "kyou"
+    },
+    "example": {
+      "en": "Today is sunny.",
+      "ja": "今日は晴れです。"
+    },
+    "audio": "/audio/vocab-081.mp3",
+    "image": "/images/words/today.jpg",
+    "level": "beginner",
+    "category": "time",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-082",
+    "english": "tomorrow",
+    "pos": "noun",
+    "phonetic": "/təˈmɔːr.oʊ/",
+    "japanese": {
+      "kanji": "明日",
+      "kana": "あした",
+      "romaji": "ashita"
+    },
+    "example": {
+      "en": "See you tomorrow.",
+      "ja": "また明日。"
+    },
+    "audio": "/audio/vocab-082.mp3",
+    "image": "/images/words/tomorrow.jpg",
+    "level": "beginner",
+    "category": "time",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-083",
+    "english": "yesterday",
+    "pos": "noun",
+    "phonetic": "/ˈjes.tɚ.deɪ/",
+    "japanese": {
+      "kanji": "昨日",
+      "kana": "きのう",
+      "romaji": "kinou"
+    },
+    "example": {
+      "en": "Yesterday was rain.",
+      "ja": "昨日は雨でした。"
+    },
+    "audio": "/audio/vocab-083.mp3",
+    "image": "/images/words/yesterday.jpg",
+    "level": "beginner",
+    "category": "time",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-084",
+    "english": "morning",
+    "pos": "noun",
+    "phonetic": "/ˈmɔːr.nɪŋ/",
+    "japanese": {
+      "kanji": "朝",
+      "kana": "あさ",
+      "romaji": "asa"
+    },
+    "example": {
+      "en": "Early morning.",
+      "ja": "早朝。"
+    },
+    "audio": "/audio/vocab-084.mp3",
+    "image": "/images/words/morning.jpg",
+    "level": "beginner",
+    "category": "time",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-085",
+    "english": "night",
+    "pos": "noun",
+    "phonetic": "/naɪt/",
+    "japanese": {
+      "kanji": "夜",
+      "kana": "よる",
+      "romaji": "yoru"
+    },
+    "example": {
+      "en": "Good night.",
+      "ja": "おやすみなさい。"
+    },
+    "audio": "/audio/vocab-085.mp3",
+    "image": "/images/words/night.jpg",
+    "level": "beginner",
+    "category": "time",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-086",
+    "english": "boy",
+    "pos": "noun",
+    "phonetic": "/bɔɪ/",
+    "japanese": {
+      "kanji": "男の子",
+      "kana": "おとこのこ",
+      "romaji": "otokonoko"
+    },
+    "example": {
+      "en": "A young boy.",
+      "ja": "若い男の子。"
+    },
+    "audio": "/audio/vocab-086.mp3",
+    "image": "/images/words/boy.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-087",
+    "english": "girl",
+    "pos": "noun",
+    "phonetic": "/ɡɜːrl/",
+    "japanese": {
+      "kanji": "女の子",
+      "kana": "おんなのこ",
+      "romaji": "onnanoko"
+    },
+    "example": {
+      "en": "A smart girl.",
+      "ja": "賢い女の子。"
+    },
+    "audio": "/audio/vocab-087.mp3",
+    "image": "/images/words/girl.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-088",
+    "english": "man",
+    "pos": "noun",
+    "phonetic": "/mæn/",
+    "japanese": {
+      "kanji": "男性",
+      "kana": "だんせい",
+      "romaji": "dansei"
+    },
+    "example": {
+      "en": "A strong man.",
+      "ja": "強い男性。"
+    },
+    "audio": "/audio/vocab-088.mp3",
+    "image": "/images/words/man.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-089",
+    "english": "woman",
+    "pos": "noun",
+    "phonetic": "/ˈwʊm.ən/",
+    "japanese": {
+      "kanji": "女性",
+      "kana": "じょせい",
+      "romaji": "josei"
+    },
+    "example": {
+      "en": "A kind woman.",
+      "ja": "親切な女性。"
+    },
+    "audio": "/audio/vocab-089.mp3",
+    "image": "/images/words/woman.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-090",
+    "english": "child",
+    "pos": "noun",
+    "phonetic": "/tʃaɪld/",
+    "japanese": {
+      "kanji": "子供",
+      "kana": "こども",
+      "romaji": "kodomo"
+    },
+    "example": {
+      "en": "Happy child.",
+      "ja": "幸せな子供。"
+    },
+    "audio": "/audio/vocab-090.mp3",
+    "image": "/images/words/child.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-091",
+    "english": "doctor",
+    "pos": "noun",
+    "phonetic": "/ˈdɑːk.tɚ/",
+    "japanese": {
+      "kanji": "医者",
+      "kana": "いしゃ",
+      "romaji": "isha"
+    },
+    "example": {
+      "en": "Go to the doctor.",
+      "ja": "医者に行く。"
+    },
+    "audio": "/audio/vocab-091.mp3",
+    "image": "/images/words/doctor.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-092",
+    "english": "police",
+    "pos": "noun",
+    "phonetic": "/pəˈliːs/",
+    "japanese": {
+      "kanji": "警察",
+      "kana": "けいさつ",
+      "romaji": "keisatsu"
+    },
+    "example": {
+      "en": "Call the police.",
+      "ja": "警察を呼んで。"
+    },
+    "audio": "/audio/vocab-092.mp3",
+    "image": "/images/words/police.jpg",
+    "level": "beginner",
+    "category": "people",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-093",
+    "english": "beautiful",
+    "pos": "adjective",
+    "phonetic": "/ˈbjuː.t̬ə.fəl/",
+    "japanese": {
+      "kanji": "美しい",
+      "kana": "うつくしい",
+      "romaji": "utsukushii"
+    },
+    "example": {
+      "en": "Beautiful sunset.",
+      "ja": "美しい夕日。"
+    },
+    "audio": "/audio/vocab-093.mp3",
+    "image": "/images/words/beautiful.jpg",
+    "level": "beginner",
+    "category": "adjectives",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-094",
+    "english": "new",
+    "pos": "adjective",
+    "phonetic": "/nuː/",
+    "japanese": {
+      "kanji": "新しい",
+      "kana": "あたらしい",
+      "romaji": "atarashii"
+    },
+    "example": {
+      "en": "New shoes.",
+      "ja": "新しい靴。"
+    },
+    "audio": "/audio/vocab-094.mp3",
+    "image": "/images/words/new.jpg",
+    "level": "beginner",
+    "category": "adjectives",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-095",
+    "english": "old",
+    "pos": "adjective",
+    "phonetic": "/oʊld/",
+    "japanese": {
+      "kanji": "古い",
+      "kana": "ふるい",
+      "romaji": "furui"
+    },
+    "example": {
+      "en": "Old book.",
+      "ja": "古い本。"
+    },
+    "audio": "/audio/vocab-095.mp3",
+    "image": "/images/words/old.jpg",
+    "level": "beginner",
+    "category": "adjectives",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-096",
+    "english": "long",
+    "pos": "adjective",
+    "phonetic": "/lɑːŋ/",
+    "japanese": {
+      "kanji": "長い",
+      "kana": "ながい",
+      "romaji": "nagai"
+    },
+    "example": {
+      "en": "Long hair.",
+      "ja": "長い髪。"
+    },
+    "audio": "/audio/vocab-096.mp3",
+    "image": "/images/words/long.jpg",
+    "level": "beginner",
+    "category": "adjectives",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-097",
+    "english": "short",
+    "pos": "adjective",
+    "phonetic": "/ʃɔːrt/",
+    "japanese": {
+      "kanji": "短い",
+      "kana": "みじかい",
+      "romaji": "mijikai"
+    },
+    "example": {
+      "en": "Short break.",
+      "ja": "短い休憩。"
+    },
+    "audio": "/audio/vocab-097.mp3",
+    "image": "/images/words/short.jpg",
+    "level": "beginner",
+    "category": "adjectives",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-098",
+    "english": "box",
+    "pos": "noun",
+    "phonetic": "/bɑːks/",
+    "japanese": {
+      "kanji": "箱",
+      "kana": "はこ",
+      "romaji": "hako"
+    },
+    "example": {
+      "en": "Open the box.",
+      "ja": "箱を開けて。"
+    },
+    "audio": "/audio/vocab-098.mp3",
+    "image": "/images/words/box.jpg",
+    "level": "beginner",
+    "category": "objects",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-099",
+    "english": "door",
+    "pos": "noun",
+    "phonetic": "/dɔːr/",
+    "japanese": {
+      "kanji": "ドア",
+      "kana": "どあ",
+      "romaji": "doa"
+    },
+    "example": {
+      "en": "Close the door.",
+      "ja": "ドアを閉めて。"
+    },
+    "audio": "/audio/vocab-099.mp3",
+    "image": "/images/words/door.jpg",
+    "level": "beginner",
+    "category": "objects",
+    "srs": {
+      "intervalDays": 1
+    }
+  },
+  {
+    "id": "vocab-100",
+    "english": "window",
+    "pos": "noun",
+    "phonetic": "/ˈwɪn.doʊ/",
+    "japanese": {
+      "kanji": "窓",
+      "kana": "まど",
+      "romaji": "mado"
+    },
+    "example": {
+      "en": "Look out the window.",
+      "ja": "窓の外を見て。"
+    },
+    "audio": "/audio/vocab-100.mp3",
+    "image": "/images/words/window.jpg",
+    "level": "beginner",
+    "category": "objects",
+    "srs": {
+      "intervalDays": 1
+    }
+  }
+]
