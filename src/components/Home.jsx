@@ -4,7 +4,7 @@ import Flashcard from './Flashcard';
 import { Filter, Shuffle, Layers, LayoutGrid, ChevronLeft, ChevronRight, Info, X, Flame, Trophy, Target } from 'lucide-react';
 import { useKidMode } from '../context/KidModeContext';
 
-const Home = () => {
+const Home = ({ isFullScreen }) => {
   const [filter, setFilter] = useState('all');
   const [cards, setCards] = useState(flashcardsData);
   const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'deck'
@@ -17,6 +17,13 @@ const Home = () => {
   const { isKidMode } = useKidMode();
 
   const categories = ['all', ...new Set(flashcardsData.map(c => c.category))];
+
+  // Auto-switch to Deck mode when entering Full Screen
+  useEffect(() => {
+    if (isFullScreen) {
+      setViewMode('deck');
+    }
+  }, [isFullScreen]);
 
   const dismissOnboarding = () => {
     setShowOnboarding(false);
@@ -90,62 +97,64 @@ const Home = () => {
   const xp = 1250;
 
   return (
-    <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 transition-colors duration-500 ${isKidMode ? 'bg-yellow-50/50' : ''}`}>
+    <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-colors duration-500 ${isKidMode ? 'bg-yellow-50/50' : ''} ${isFullScreen ? 'h-full flex flex-col justify-center items-center' : 'pb-20'}`}>
       
-      {/* Hero / Gamification Section */}
-      <div className="mb-8 pt-4 animate-in slide-in-from-top-5 duration-500">
-        <div className={`rounded-3xl p-6 shadow-xl relative overflow-hidden ${isKidMode ? 'bg-gradient-to-r from-orange-400 to-pink-500' : 'bg-gradient-to-r from-blue-600 to-indigo-700'}`}>
-          
-          {/* Decorative circles */}
-          <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-white/10 blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 rounded-full bg-white/10 blur-2xl"></div>
+      {/* Hero / Gamification Section - Hide in Full Screen */}
+      {!isFullScreen && (
+        <div className="mb-8 pt-4 animate-in slide-in-from-top-5 duration-500">
+          <div className={`rounded-3xl p-6 shadow-xl relative overflow-hidden ${isKidMode ? 'bg-gradient-to-r from-orange-400 to-pink-500' : 'bg-gradient-to-r from-blue-600 to-indigo-700'}`}>
+            
+            {/* Decorative circles */}
+            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-white/10 blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 rounded-full bg-white/10 blur-2xl"></div>
 
-          <div className="relative z-10 text-white">
-            <div className="flex justify-between items-start mb-6">
-              <div>
-                <h1 className="text-2xl font-bold mb-1">Hello, Student! 👋</h1>
-                <p className="text-blue-100 text-sm font-medium opacity-90">Ready to learn some new words?</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="flex flex-col items-end">
-                  <div className="flex items-center gap-1 font-bold text-yellow-300">
-                     <Flame className="w-5 h-5 fill-yellow-300" />
-                     <span>{streak} Days</span>
+            <div className="relative z-10 text-white">
+              <div className="flex justify-between items-start mb-6">
+                <div>
+                  <h1 className="text-2xl font-bold mb-1">Hello, Student! 👋</h1>
+                  <p className="text-blue-100 text-sm font-medium opacity-90">Ready to learn some new words?</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="flex flex-col items-end">
+                    <div className="flex items-center gap-1 font-bold text-yellow-300">
+                       <Flame className="w-5 h-5 fill-yellow-300" />
+                       <span>{streak} Days</span>
+                    </div>
+                    <span className="text-xs text-blue-100 opacity-75">Streak</span>
                   </div>
-                  <span className="text-xs text-blue-100 opacity-75">Streak</span>
-                </div>
-                <div className="w-px h-8 bg-white/20"></div>
-                <div className="flex flex-col items-end">
-                   <div className="flex items-center gap-1 font-bold text-purple-200">
-                     <Trophy className="w-5 h-5" />
-                     <span>{xp} XP</span>
-                   </div>
-                   <span className="text-xs text-blue-100 opacity-75">Total XP</span>
+                  <div className="w-px h-8 bg-white/20"></div>
+                  <div className="flex flex-col items-end">
+                     <div className="flex items-center gap-1 font-bold text-purple-200">
+                       <Trophy className="w-5 h-5" />
+                       <span>{xp} XP</span>
+                     </div>
+                     <span className="text-xs text-blue-100 opacity-75">Total XP</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-black/20 rounded-2xl p-4 backdrop-blur-sm">
-               <div className="flex justify-between items-center mb-2 text-sm font-medium">
-                 <div className="flex items-center gap-2">
-                    <Target className="w-4 h-4 text-green-400" />
-                    <span>Daily Goal</span>
+              <div className="bg-black/20 rounded-2xl p-4 backdrop-blur-sm">
+                 <div className="flex justify-between items-center mb-2 text-sm font-medium">
+                   <div className="flex items-center gap-2">
+                      <Target className="w-4 h-4 text-green-400" />
+                      <span>Daily Goal</span>
+                   </div>
+                   <span>{dailyGoal}%</span>
                  </div>
-                 <span>{dailyGoal}%</span>
-               </div>
-               <div className="h-3 bg-black/20 rounded-full overflow-hidden">
-                  <div 
-                    className="h-full bg-gradient-to-r from-green-400 to-emerald-500 rounded-full transition-all duration-1000 ease-out"
-                    style={{ width: `${dailyGoal}%` }}
-                  ></div>
-               </div>
+                 <div className="h-3 bg-black/20 rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-gradient-to-r from-green-400 to-emerald-500 rounded-full transition-all duration-1000 ease-out"
+                      style={{ width: `${dailyGoal}%` }}
+                    ></div>
+                 </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
 
-      {/* Onboarding Tooltip */}
-      {showOnboarding && (
+      {/* Onboarding Tooltip - Hide in Full Screen */}
+      {showOnboarding && !isFullScreen && (
         <div className="fixed bottom-24 left-4 right-4 md:bottom-8 md:right-8 md:left-auto max-w-sm bg-blue-600 text-white p-4 rounded-xl shadow-2xl z-50 animate-bounce-in">
           <div className="flex justify-between items-start gap-3">
              <Info className="w-6 h-6 shrink-0 mt-0.5" />
@@ -158,48 +167,50 @@ const Home = () => {
         </div>
       )}
 
-      {/* Controls & Filters */}
-      <div className="sticky top-16 z-30 py-3 -mx-4 px-4 bg-white/85 dark:bg-gray-900/85 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-700/50 md:static md:bg-transparent md:border-none md:p-0 md:mx-0 transition-all mb-6 shadow-sm md:shadow-none">
-        <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center max-w-7xl mx-auto">
-          
-          {/* Row 1: Filters */}
-          <div className="flex items-center gap-2 overflow-x-auto max-w-full pb-1 no-scrollbar mask-gradient w-full md:w-auto px-1">
-            <Filter className="w-5 h-5 text-gray-400 flex-shrink-0" />
-            {categories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => handleFilter(cat)}
-                className={`px-4 py-2 rounded-full text-sm font-bold capitalize whitespace-nowrap transition-all flex-shrink-0 active:scale-95 ${
-                  filter === cat 
-                    ? `${isKidMode ? 'bg-orange-500 ring-orange-300' : 'bg-blue-600 ring-blue-200'} text-white shadow-lg shadow-blue-500/30` 
-                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
-                }`}
+      {/* Controls & Filters - Hide in Full Screen */}
+      {!isFullScreen && (
+        <div className="sticky top-16 z-30 py-3 -mx-4 px-4 bg-white/85 dark:bg-gray-900/85 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-700/50 md:static md:bg-transparent md:border-none md:p-0 md:mx-0 transition-all mb-6 shadow-sm md:shadow-none">
+          <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center max-w-7xl mx-auto">
+            
+            {/* Row 1: Filters */}
+            <div className="flex items-center gap-2 overflow-x-auto max-w-full pb-1 no-scrollbar mask-gradient w-full md:w-auto px-1">
+              <Filter className="w-5 h-5 text-gray-400 flex-shrink-0" />
+              {categories.map(cat => (
+                <button
+                  key={cat}
+                  onClick={() => handleFilter(cat)}
+                  className={`px-4 py-2 rounded-full text-sm font-bold capitalize whitespace-nowrap transition-all flex-shrink-0 active:scale-95 ${
+                    filter === cat 
+                      ? `${isKidMode ? 'bg-orange-500 ring-orange-300' : 'bg-blue-600 ring-blue-200'} text-white shadow-lg shadow-blue-500/30` 
+                      : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+            
+            {/* Row 2: Action Buttons */}
+            <div className="flex items-center gap-2 w-full md:w-auto">
+               <button 
+                onClick={() => setViewMode(viewMode === 'grid' ? 'deck' : 'grid')}
+                className="flex-1 md:flex-none justify-center flex items-center gap-2 px-4 py-3 md:py-2.5 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-all font-medium shadow-sm active:scale-95"
               >
-                {cat}
+                {viewMode === 'grid' ? <Layers className="w-4 h-4" /> : <LayoutGrid className="w-4 h-4" />}
+                <span>{viewMode === 'grid' ? 'Deck Mode' : 'Grid View'}</span>
               </button>
-            ))}
-          </div>
-          
-          {/* Row 2: Action Buttons */}
-          <div className="flex items-center gap-2 w-full md:w-auto">
-             <button 
-              onClick={() => setViewMode(viewMode === 'grid' ? 'deck' : 'grid')}
-              className="flex-1 md:flex-none justify-center flex items-center gap-2 px-4 py-3 md:py-2.5 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 transition-all font-medium shadow-sm active:scale-95"
-            >
-              {viewMode === 'grid' ? <Layers className="w-4 h-4" /> : <LayoutGrid className="w-4 h-4" />}
-              <span>{viewMode === 'grid' ? 'Deck Mode' : 'Grid View'}</span>
-            </button>
 
-            <button 
-              onClick={shuffleCards}
-              className="flex-1 md:flex-none justify-center flex items-center gap-2 px-4 py-3 md:py-2.5 bg-amber-100 dark:bg-amber-900/50 text-amber-900 dark:text-amber-100 rounded-xl hover:bg-amber-200 dark:hover:bg-amber-900/70 transition-all font-medium shadow-sm active:scale-95"
-            >
-              <Shuffle className="w-4 h-4" />
-              <span>Shuffle</span>
-            </button>
+              <button 
+                onClick={shuffleCards}
+                className="flex-1 md:flex-none justify-center flex items-center gap-2 px-4 py-3 md:py-2.5 bg-amber-100 dark:bg-amber-900/50 text-amber-900 dark:text-amber-100 rounded-xl hover:bg-amber-200 dark:hover:bg-amber-900/70 transition-all font-medium shadow-sm active:scale-95"
+              >
+                <Shuffle className="w-4 h-4" />
+                <span>Shuffle</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {cards.length === 0 ? (
         <div className="text-center py-20">
@@ -209,7 +220,7 @@ const Home = () => {
           </div>
         </div>
       ) : (
-        viewMode === 'grid' ? (
+        viewMode === 'grid' && !isFullScreen ? (
           <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-6 justify-items-center animate-in fade-in duration-500">
             {cards.map(card => (
               <div key={card.id} className="hover:-translate-y-2 hover:rotate-1 transition-transform duration-300 w-full max-w-sm">
@@ -218,8 +229,10 @@ const Home = () => {
             ))}
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-center min-h-[50vh] w-full max-w-md mx-auto relative">
-            <div className="w-full mb-4 flex justify-between items-center text-gray-500 dark:text-gray-400 text-sm font-medium px-2">
+          <div className={`flex flex-col items-center justify-center w-full max-w-md mx-auto relative ${isFullScreen ? 'min-h-screen' : 'min-h-[50vh]'}`}>
+            
+            {/* Card Counter - Make subtle in FS */}
+            <div className={`w-full mb-4 flex justify-between items-center text-gray-500 dark:text-gray-400 text-sm font-medium px-2 ${isFullScreen ? 'opacity-50 hover:opacity-100 transition-opacity' : ''}`}>
               <span>Card {currentIndex + 1} of {cards.length}</span>
               <span className="uppercase tracking-wider text-xs bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">{cards[currentIndex].category}</span>
             </div>
@@ -250,7 +263,7 @@ const Home = () => {
                </button>
             </div>
 
-            {/* Mobile Navigation Controls */}
+            {/* Mobile Navigation Controls - Keep in FS? Yes, needed for mobile */}
             <div className="flex gap-6 mt-8 md:hidden w-full justify-center">
                <button 
                  onClick={prevCard}
@@ -266,10 +279,12 @@ const Home = () => {
                </button>
             </div>
             
-            <p className="mt-6 text-gray-400 text-xs flex items-center gap-2">
-              <Layers className="w-3 h-3" />
-              Swipe left/right to navigate
-            </p>
+            {!isFullScreen && (
+              <p className="mt-6 text-gray-400 text-xs flex items-center gap-2">
+                <Layers className="w-3 h-3" />
+                Swipe left/right to navigate
+              </p>
+            )}
           </div>
         )
       )}

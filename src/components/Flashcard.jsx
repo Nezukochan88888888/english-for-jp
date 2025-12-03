@@ -21,10 +21,10 @@ const Flashcard = ({ card }) => {
 
     const playTTS = () => {
       if ('speechSynthesis' in window) {
-        const text = isJa ? card.japanese.kanji : card.english;
+        const text = isJa ? card.japanese.kana : card.english;
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = isJa ? 'ja-JP' : 'en-US';
-        utterance.rate = isKidMode ? 0.8 : 1.0; // Slower for kids
+        utterance.rate = isKidMode ? 0.6 : 0.8; // Slower for clarity (0.8 standard, 0.6 kid mode)
         utterance.onend = () => isJa ? setIsPlayingJa(false) : setIsPlaying(false);
         utterance.onerror = () => isJa ? setIsPlayingJa(false) : setIsPlaying(false);
         window.speechSynthesis.speak(utterance);
@@ -88,7 +88,7 @@ const Flashcard = ({ card }) => {
                src={imgSrc} 
                alt={card.english} 
                loading="lazy"
-               className="max-h-44 w-full object-contain transition-transform duration-300 group-hover:scale-105" 
+               className="max-h-60 w-full object-contain transition-transform duration-300 group-hover:scale-105" 
                onError={handleImageError}
              />
           </div>
@@ -137,14 +137,14 @@ const Flashcard = ({ card }) => {
              {/* Japanese Audio Button */}
             <button 
               onClick={(e) => playAudio(e, 'ja')} 
-              className={`p-3 rounded-full shadow-sm border transition-all duration-200 mb-6 ${
+              className={`p-4 rounded-full shadow-sm border transition-all duration-200 mb-6 ${
                 isPlayingJa 
                   ? 'bg-red-100 text-red-600 border-red-300 scale-110 ring-4 ring-red-100' 
                   : 'bg-white text-red-500 border-red-100 hover:bg-red-50 hover:border-red-200 hover:scale-105'
               }`}
               aria-label="Play Japanese Audio"
             >
-               {isPlayingJa ? <Volume2 className="w-6 h-6 animate-pulse" /> : <Languages className="w-6 h-6" />}
+               {isPlayingJa ? <Volume2 className="w-8 h-8 animate-pulse" /> : <Play className="w-8 h-8 ml-1" />}
             </button>
           </div>
           
