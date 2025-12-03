@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Volume2 } from 'lucide-react';
 
 const AlphabetCard = ({ letter }) => {
+  const [imgError, setImgError] = useState(false);
+
   const playAudio = () => {
     const globalMuted = JSON.parse(localStorage.getItem('audioMuted') || 'false');
     if (globalMuted) return;
@@ -35,9 +37,20 @@ const AlphabetCard = ({ letter }) => {
         {letter.noteJP}
       </div>
       {letter.strokeImage && (
-         <div className="mt-2 w-16 h-16 bg-gray-50 rounded flex items-center justify-center">
-           {/* Placeholder if image missing */}
-           <img src={letter.strokeImage} alt="Stroke Order" className="w-full h-full object-contain opacity-60" onError={(e) => e.target.style.display='none'} />
+         <div className="mt-2 w-16 h-16 bg-gray-50 rounded flex items-center justify-center overflow-hidden">
+           {!imgError ? (
+             <img 
+               src={letter.strokeImage} 
+               alt="Stroke Order" 
+               className="w-full h-full object-contain opacity-60" 
+               onError={() => setImgError(true)} 
+             />
+           ) : (
+             // Fallback: Large tracing-style letter
+             <span className="text-4xl font-serif text-gray-200 select-none" aria-label="Tracing fallback">
+               {letter.letter}
+             </span>
+           )}
          </div>
       )}
     </div>

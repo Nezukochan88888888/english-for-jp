@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BookOpen, Download, FileText } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
 const LessonViewer = ({ url }) => {
   const [content, setContent] = useState('');
@@ -9,13 +10,15 @@ const LessonViewer = ({ url }) => {
       fetch(url)
         .then(res => res.text())
         .then(text => setContent(text))
-        .catch(err => setContent('Error loading lesson plan.'));
+        .catch(() => setContent('Error loading lesson plan.'));
     }
   }, [url]);
 
   return (
-    <div className="bg-white p-8 rounded-xl shadow-sm border prose max-w-none">
-      <pre className="whitespace-pre-wrap font-sans text-gray-700">{content}</pre>
+    <div className="bg-white p-8 rounded-xl shadow-sm border overflow-y-auto max-h-[80vh]">
+      <article className="prose prose-slate prose-headings:text-blue-800 prose-a:text-blue-600 max-w-none">
+        <ReactMarkdown>{content}</ReactMarkdown>
+      </article>
     </div>
   );
 };

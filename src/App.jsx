@@ -1,13 +1,12 @@
 import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import AudioToggle from './components/AudioToggle';
-import alphabetData from './data/alphabet.json';
 import { GraduationCap, Menu, X, Loader2, Smile } from 'lucide-react';
 import { KidModeProvider, useKidMode } from './context/KidModeContext';
 
 // Lazy load components
 const Home = lazy(() => import('./components/Home'));
-const AlphabetCard = lazy(() => import('./components/AlphabetCard'));
+const AlphabetPage = lazy(() => import('./components/AlphabetPage'));
 const TeacherGuide = lazy(() => import('./components/TeacherGuide'));
 
 const LoadingSpinner = () => (
@@ -112,19 +111,7 @@ function App() {
             <Suspense fallback={<LoadingSpinner />}>
               <Routes>
                 <Route path="/" element={<Home />} />
-                
-                <Route path="/alphabet" element={
-                  <div className="max-w-7xl mx-auto p-6">
-                     <div className="text-center mb-10">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-2">Alphabet Chart</h2>
-                        <p className="text-gray-500">Click a letter to hear its pronunciation.</p>
-                     </div>
-                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                       {alphabetData.map(l => <AlphabetCard key={l.letter} letter={l} />)}
-                     </div>
-                  </div>
-                } />
-
+                <Route path="/alphabet" element={<AlphabetPage />} />
                 <Route path="/teacher" element={<TeacherGuide />} />
               </Routes>
             </Suspense>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import flashcardsData from '../data/flashcards.json';
 import Flashcard from './Flashcard';
 import { Filter, Shuffle, Layers, LayoutGrid, ChevronLeft, ChevronRight, Info, X } from 'lucide-react';
@@ -11,17 +11,12 @@ const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
-  const [showOnboarding, setShowOnboarding] = useState(false);
+  const [showOnboarding, setShowOnboarding] = useState(() => {
+    return !localStorage.getItem('hasSeenOnboarding');
+  });
   const { isKidMode } = useKidMode();
 
   const categories = ['all', ...new Set(flashcardsData.map(c => c.category))];
-
-  useEffect(() => {
-    const hasSeenOnboarding = localStorage.getItem('hasSeenOnboarding');
-    if (!hasSeenOnboarding) {
-      setShowOnboarding(true);
-    }
-  }, []);
 
   const dismissOnboarding = () => {
     setShowOnboarding(false);
@@ -44,13 +39,13 @@ const Home = () => {
     setCurrentIndex(0);
   };
 
-  const nextCard = () => {
+  const nextCard = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % cards.length);
-  };
+  }, [cards.length]);
 
-  const prevCard = () => {
+  const prevCard = useCallback(() => {
     setCurrentIndex((prev) => (prev - 1 + cards.length) % cards.length);
-  };
+  }, [cards.length]);
 
   // Swipe Handlers
   const minSwipeDistance = 50;
@@ -88,7 +83,7 @@ const Home = () => {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [viewMode, cards]);
+  }, [viewMode, cards, nextCard, prevCard]);
 
   return (
     <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 min-h-screen transition-colors duration-500 ${isKidMode ? 'bg-yellow-50/50' : ''}`}>
@@ -173,7 +168,7 @@ const Home = () => {
               onTouchEnd={onTouchEnd}
             >
                <div className="animate-in zoom-in-95 duration-300">
-                  <Flashcard card={cards[currentIndex]} />
+                  <Flashcard key={cards[currentIndex].id} card={cards[currentIndex]} />
                </div>
                
                {/* Navigation Buttons (Desktop/Visual) */}

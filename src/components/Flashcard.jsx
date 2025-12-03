@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Play, RotateCw, Volume2, Languages } from 'lucide-react';
 import { useKidMode } from '../context/KidModeContext';
 
@@ -9,12 +9,6 @@ const Flashcard = ({ card }) => {
   const [imgSrc, setImgSrc] = useState(card.image);
   const [hasError, setHasError] = useState(false);
   const { isKidMode } = useKidMode();
-
-  useEffect(() => {
-    setImgSrc(card.image);
-    setHasError(false);
-    setIsFlipped(false);
-  }, [card]);
 
   const playAudio = (e, lang = 'en') => {
     e.stopPropagation();
