@@ -1,7 +1,8 @@
 import React, { useState, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import AudioToggle from './components/AudioToggle';
-import { GraduationCap, Menu, X, Loader2, Smile } from 'lucide-react';
+import BottomNav from './components/BottomNav';
+import { GraduationCap, Loader2, Smile, Moon, Sun } from 'lucide-react';
 import { KidModeProvider, useKidMode } from './context/KidModeContext';
 
 // Lazy load components
@@ -15,83 +16,76 @@ const LoadingSpinner = () => (
   </div>
 );
 
-const Navigation = ({ lang, setLang }) => {
+const Navigation = ({ lang, setLang, isDark, setIsDark }) => {
   const location = useLocation();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { isKidMode, setIsKidMode } = useKidMode();
 
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className={`bg-white border-b sticky top-0 z-50 transition-colors ${isKidMode ? 'border-b-4 border-yellow-400' : ''}`}>
+    <header className={`sticky top-0 z-40 transition-all duration-300 border-b backdrop-blur-md ${
+      isKidMode 
+        ? 'border-yellow-400 bg-white/95' 
+        : 'border-gray-200/50 dark:border-gray-800/50 bg-white/80 dark:bg-gray-900/80'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Link to="/" className="flex items-center gap-2 group" onClick={() => setIsMobileMenuOpen(false)}>
-            <div className={`p-2 rounded-lg transition ${isKidMode ? 'bg-yellow-400 rotate-3' : 'bg-blue-600 group-hover:bg-blue-700'}`}>
-               <GraduationCap className="w-6 h-6 text-white" />
+        {/* Logo Section */}
+        <div className="flex items-center shrink-0">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 group">
+            <div className={`p-1.5 sm:p-2 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-110 ${isKidMode ? 'bg-gradient-to-br from-yellow-400 to-orange-500 rotate-3' : 'bg-gradient-to-br from-blue-500 to-indigo-600'}`}>
+               <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
-            <span className={`text-xl font-bold tracking-tight ${isKidMode ? 'font-comic text-orange-500' : 'text-gray-900'}`}>
+            <span className={`text-lg sm:text-xl font-bold tracking-tight truncate ${isKidMode ? 'font-comic text-orange-500' : 'text-gray-900 dark:text-white'}`}>
               English<span className={isKidMode ? 'text-green-500' : 'text-blue-600'}>ForJP</span>
             </span>
           </Link>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-1">
-          <Link to="/" className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/') ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50'}`}>
+        <nav className="hidden md:flex items-center gap-1 bg-gray-100/50 dark:bg-gray-800/50 p-1 rounded-xl mx-4">
+          <Link to="/" className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${isActive('/') ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}`}>
             Flashcards
           </Link>
-          <Link to="/alphabet" className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/alphabet') ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50'}`}>
+          <Link to="/alphabet" className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${isActive('/alphabet') ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}`}>
             Alphabet
           </Link>
-          <Link to="/teacher" className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/teacher') ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50'}`}>
-            Teacher Guide
+          <Link to="/teacher" className={`px-4 py-2 rounded-lg text-sm font-bold transition-all ${isActive('/teacher') ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm' : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}`}>
+            Teacher
           </Link>
         </nav>
 
-        <div className="flex items-center gap-3">
+        {/* Mobile/Right Controls */}
+        <div className="flex items-center gap-1.5 sm:gap-3">
            {/* Kid Mode Toggle */}
            <button
              onClick={() => setIsKidMode(!isKidMode)}
-             className={`p-2 rounded-full transition-all ${isKidMode ? 'bg-yellow-100 text-yellow-600 ring-2 ring-yellow-300 scale-110' : 'bg-gray-50 text-gray-400 hover:bg-gray-100'}`}
+             className={`p-1.5 sm:p-2 rounded-full transition-all active:scale-90 ${isKidMode ? 'bg-yellow-100 text-yellow-600 ring-2 ring-yellow-300 scale-110 shadow-lg' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'}`}
              title="Kid Mode"
            >
-             <Smile className="w-5 h-5" />
+             <Smile className="w-5 h-5 sm:w-5 sm:h-5" />
+           </button>
+           
+           {/* Dark Mode Toggle */}
+           <button
+             onClick={() => {
+                setIsDark(!isDark);
+                document.documentElement.classList.toggle('dark');
+             }}
+             className="p-1.5 sm:p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-yellow-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors active:scale-90"
+           >
+             {isDark ? <Sun className="w-5 h-5 sm:w-5 sm:h-5" /> : <Moon className="w-5 h-5 sm:w-5 sm:h-5" />}
            </button>
 
+           {/* Language Toggle */}
            <button 
              onClick={() => setLang(lang === 'en' ? 'ja' : 'en')} 
-             className="text-xs font-bold border bg-gray-50 px-2 py-1.5 rounded-md hover:bg-gray-100 transition uppercase tracking-wider w-16 text-center"
-             aria-label={lang === 'en' ? 'Switch to Japanese' : 'Switch to English'}
+             className="text-xs font-bold border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-2 sm:px-3 py-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition uppercase tracking-wider shadow-sm active:scale-95 text-gray-700 dark:text-gray-300 min-w-[36px] text-center"
            >
-             {lang === 'en' ? '🇺🇸 EN' : '🇯🇵 JP'}
+             {lang === 'en' ? 'EN' : 'JP'}
            </button>
-           <div className="w-px h-6 bg-gray-200 mx-1"></div>
-           <AudioToggle />
            
-           <button 
-             className="md:hidden ml-2 p-2 text-gray-500 hover:bg-gray-100 rounded-lg transition-colors"
-             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-             aria-label="Toggle menu"
-             aria-expanded={isMobileMenuOpen}
-           >
-             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-           </button>
-        </div>
-      </div>
-
-      {/* Mobile Nav */}
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'max-h-64 border-t opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="bg-gray-50 p-4 space-y-2">
-          <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className={`block px-4 py-3 rounded-lg ${isActive('/') ? 'bg-blue-100 text-blue-800' : 'bg-white shadow-sm'}`}>
-             Flashcards
-          </Link>
-          <Link to="/alphabet" onClick={() => setIsMobileMenuOpen(false)} className={`block px-4 py-3 rounded-lg ${isActive('/alphabet') ? 'bg-blue-100 text-blue-800' : 'bg-white shadow-sm'}`}>
-             Alphabet
-          </Link>
-          <Link to="/teacher" onClick={() => setIsMobileMenuOpen(false)} className={`block px-4 py-3 rounded-lg ${isActive('/teacher') ? 'bg-blue-100 text-blue-800' : 'bg-white shadow-sm'}`}>
-             Teacher Guide
-          </Link>
+           <div className="w-px h-6 bg-gray-200 dark:bg-gray-700 mx-0.5 hidden sm:block"></div>
+           <AudioToggle />
         </div>
       </div>
     </header>
@@ -100,14 +94,15 @@ const Navigation = ({ lang, setLang }) => {
 
 function App() {
   const [lang, setLang] = useState('en');
+  const [isDark, setIsDark] = useState(false);
 
   return (
     <KidModeProvider>
       <Router>
-        <div className="min-h-screen bg-gray-50 font-sans text-gray-900 selection:bg-blue-100">
-          <Navigation lang={lang} setLang={setLang} />
+        <div className={`min-h-screen font-sans selection:bg-blue-100 dark:selection:bg-blue-900 pb-24 md:pb-0 ${isDark ? 'dark' : ''}`}>
+          <Navigation lang={lang} setLang={setLang} isDark={isDark} setIsDark={setIsDark} />
 
-          <main>
+          <main className="pt-4">
             <Suspense fallback={<LoadingSpinner />}>
               <Routes>
                 <Route path="/" element={<Home />} />
@@ -116,6 +111,8 @@ function App() {
               </Routes>
             </Suspense>
           </main>
+          
+          <BottomNav />
         </div>
       </Router>
     </KidModeProvider>
